@@ -24,7 +24,6 @@ public class PublisherService {
     public Publisher getPublisher(Long id){
        return  publisherRepo.findAllById(id);
     }
-
     public void addPublisher(Publisher publisher){
         publisherRepo.save(publisher);
     }

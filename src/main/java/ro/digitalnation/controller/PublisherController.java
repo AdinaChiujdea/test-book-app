@@ -2,11 +2,8 @@ package ro.digitalnation.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import ro.digitalnation.model.Publisher;
-import ro.digitalnation.model.PublisherRepository;
 import ro.digitalnation.service.PublisherService;
 
 import java.util.List;
@@ -18,7 +15,16 @@ public class PublisherController {
     private PublisherService publisherService;
 
     @GetMapping("/publishers")
-    List<Publisher> getAllPublishers() {
+     public List<Publisher> getAllPublishers() {
         return  publisherService.getAllPublishers();
+    }
+    @RequestMapping("/publishers/{id}")
+    public Publisher getPublisher(@PathVariable Long id){
+        return  publisherService.getPublisher(id);
+    }
+
+    @RequestMapping(method = RequestMethod.POST, value = "/publishers")
+    public void addPublisher(@RequestBody Publisher publisher){
+       publisherService.addPublisher(publisher);
     }
 }

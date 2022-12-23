@@ -16,10 +16,14 @@ create table `books`(
 );
 
 
-INSERT INTO publishers VALUES (1001, 'John Smith', 'BRASOV', '0123456789', 'test@email.com');
-INSERT INTO publishers VALUES (1002, 'Popescu Ion', 'Bucuresti', '0123456789', 'test@email.com');
-INSERT INTO publishers VALUES (1003, 'XE', 'BRASOV', '0123456789', 'test@email.com');
-INSERT INTO publishers VALUES (1004, 'BT', 'BRASOV', '0123456789', 'test@email.com');
-INSERT INTO publishers VALUES (1005, 'RFSD', 'BRASOV', '0123456789', 'test@email.com');
+INSERT INTO publishers VALUES (1001, 'Tessa Bailey', 'Buzau', '0123456789', 'test@email.com');
+INSERT INTO publishers VALUES (1002, 'Josie Silver', 'Bucuresti', '0123456780', 'test1@email.com');
+INSERT INTO publishers VALUES (1003, 'Emily Stone', 'Maramures', '0123456782', 'test2@email.com');
+INSERT INTO publishers VALUES (1004, 'Mandy Baggot', 'Sibiu', '0123456781', 'test3@email.com');
+INSERT INTO publishers VALUES (1005, 'Josie Silver', 'Galati', '0123456786', 'test4@email.com');
 
-INSERT INTO books VALUES (1, 'Title', '12356448556', 1001);
+INSERT INTO books VALUES (1, 'Window Shopping', '12356448556', 1001);
+INSERT INTO books VALUES (2, 'O zi de Decembrie', '4343299328', 1002);
+INSERT INTO books VALUES (3, 'Scrisoare de Craciun', '43435423328', 1003);
+INSERT INTO books VALUES (4, 'One New York Christmas', '234566328', 1004);
+INSERT INTO books VALUES (5, 'One day in december', '5369299328', 1005);
