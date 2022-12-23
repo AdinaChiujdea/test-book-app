@@ -13,7 +13,6 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping("/api")
 public class PublisherController {
     @Autowired
     private PublisherService publisherService;
