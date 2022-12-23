@@ -16,7 +16,7 @@ public class BookController {
 
 /*    @GetMapping("{id}")
     public Book getBookById(@PathVariable Long id) {
-        bookRepo.findById(id);
+        return bookRepo.findById(id);
     }*/
 
 }
